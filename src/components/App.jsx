@@ -12,10 +12,12 @@ const App = () => {
     });
     setInput("");
   };
-  const deleteItem = (props.i) => {
-    console.log(id);
-    //console.log(event.target.parentElement.parentElement);
-    //event.target.parentElement.parentElement.remove();
+  const deleteItem = (id) => {
+    setTodoList((oldList) => {
+      return oldList.filter((element, index) => {
+        return index !== id;
+      });
+    });
   };
 
   return (
@@ -38,7 +40,14 @@ const App = () => {
       <div className="todo-list-div">
         <ol>
           {todoList.map((value, index) => {
-            return <List key={index} value={value} onSelect={deleteItem} />;
+            return (
+              <List
+                key={index}
+                id={index}
+                value={value}
+                onSelect={deleteItem}
+              />
+            );
           })}
         </ol>
       </div>
