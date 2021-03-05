@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #30011E;
+    font-family: 'Rubik',
+        sans-serif;
+}
+
+.App {
+    background-color: white;
+    box-shadow: 0 0 5px white;
+    width: 300px;
+    height: 450px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.header {
+    color: white;
+    padding: 10px 0;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border-radius: 7px;
+    background-color: #30011E;
+    text-align: center;
+}
+
+.input-div {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.input-field {
+    background-color: none;
+    border: none;
+    width: 220px;
+    margin: 0 auto;
+    text-indent: 5px;
+    font-size: 17px;
+    border-bottom: 2px solid #30011E;
+    padding: 5px 0;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-field::placeholder {
+    color: #30011E;
+}
+
+.input-field:focus {
+    background-color: #30011E;
+    color: white;
+    transition: 0.3s;
+}
+
+.input-field:focus::placeholder {
+    color: white;
+}
+
+.button {
+    width: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 40px;
+    margin: 0 10px;
+    color: #30011E;
+    background-color: white;
+    border: none;
+    outline: none;
+    height: 30px;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background-color: #30011E;
+    color: white;
+    transition: 0.2s;
+}
+
+.todo-list-div {
+    margin: 15px 0;
+}
+
+.todo-li {
+    width: 270px;
+    border-radius: 5px;
+    padding: 5px 0;
+    text-indent: 5px;
+    margin: 2px auto;
+    text-decoration: none;
+    list-style-type: none;
+    background-color: #30011E;
+    color: white;
+}
+
+.todo-delete-button {
+    width: 25px;
+    font-weight: bold;
+    margin-right: 5px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    background-color: #30011E;
+    color: white;
+    height: 25px;
+    transition: 0.2s;
+}
+
+.todo-delete-button:hover {
+    background-color: white;
+    color: #30011E;
+    transition: 0.2s;
+}
