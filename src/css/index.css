@@ -103,6 +103,7 @@ body {
     list-style-type: none;
     background-color: #30011E;
     color: white;
+    transition: 0.4s;
 }
 
 .todo-delete-button {
